@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chat - KaKao Clone</title>
+</head>
+
+<body id="chat-screen">
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span>
+      <i class="fa-solid fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>100%</span>
+      <i class="fa-solid fa-battery-full fa-lg"></i>
+      <i class="fa-solid fa-bolt-lightning"></i>
+    </div>
+  </div>
+  <header class="alt-header">
+    <div class="alt-header__column">
+      <a href="chats.html"><i class="fa-solid fa-angle-left fa-xl"></i></a>
+    </div>
+    <div class="alt-header__column">
+      <h1 class="alt-header__title">Moon</h1>
+    </div>
+    <div class="alt-header__column">
+      <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
+      <span><i class="fa-solid fa-bars"></i></span>
+    </div>
+  </header>
+
+  <main class="main-screen main-chat">
+    <div class="chat__timeStamp">
+      Tuesday, June 30, 2020
+    </div>
+    <div class="message-row">
+      <img
+        src="data:image/jpeg;base64,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" />
+      <div class="message-row__content">
+        <span class="message__author">사나</span>
+        <div class="message-info">
+          <span class="message__bubble">오빠 뭐해?</span>
+          <span class="message__time">21:27</span>
+        </div>
+      </div>
+    </div>
+    <div class="message-row message-row--own">
+      <div class="message-row__content">
+        <div class="message-info">
+          <span class="message__bubble">너 생각중이지</span>
+          <span class="message__time">21:27</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <form class="reply">
+    <div class="reply__column">
+      <i class="fa-regular fa-square-plus fa-xl"></i>
+    </div>
+    <div class="reply__column">
+      <input type="text" placeholder="메세지를 입력하세요" />
+      <i class="fa-regular fa-face-smile fa-xl"></i>
+      <button><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+
+  </form>
+
+
+
+  <script src="https://kit.fontawesome.com/2078cddd47.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
