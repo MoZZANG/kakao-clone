@@ -11,6 +11,7 @@
 .nav__list {
   display: flex;
   justify-content: space-between;
+  
 }
 .nav__link {
   color: #53575a;
@@ -21,4 +22,32 @@
   position: absolute;
   left: 17px;
   bottom: 15px;
+  animation: notificationAnimation 3.5s ease-in-out infinite;
+}
+.nav{
+  transform: translateY(50px);
+  animation: appearNav__list 0.8s ease-in-out forwards;
+}
+
+@keyframes appearNav__list{
+  from{
+    opacity: 0;
+  }
+  to{
+  opacity: 1;
+  transform: none;
+  }
+
+}
+@keyframes notificationAnimation{
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: translateY(-5px) rotateY(360deg);
+
+  }
+  100%{
+    transform: none;
+  }
 }
